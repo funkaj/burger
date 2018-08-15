@@ -1,7 +1,19 @@
+body {
+  background-color: rgb(58, 54, 45);
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+ h1 {
+  font-family: 'Bungee Shade', cursive;
+  color: red;
+ }
 li {
   padding: 5px;
   margin: 5px;
   background: #faebd7;
+  max-width: 20rem;
 }
 
 .label {
