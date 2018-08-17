@@ -1,42 +1,79 @@
-<img src="./assets/images/burgerGuy.png" alt="">
-<div class='container'>
-<h1>Burgers!</h1>
-<h2>Burgers ready to eat!</h2>
+<div class='container'>{{!--main container--}}
+  <div class='wrapper'>{{!--center col wrapper--}}
+    <div class='row'>
+      <div class='col-12'>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler">
+              <a class="navbar-brand" href="#">Menu</a>
+            </span>
+          </button>
+          <div class='container' style='justify-content: center;'>
+            <div class='row'>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style='flex-direction: row;'>
+                  <li class="nav-item active col-sm-5">
+                    <a class="nav-link" href="#about">About
+                      <span class="sr-only"></span>
+                    </a>
+                  </li>
+                  <li class="nav-item active col-sm-5">
+                    <a class="nav-link" href="#work">Work
+                      <span class="sr-only"></span>
+                    </a>
+                  </li>
+                  <li class="nav-item active col-sm-5">
+                    <a class="nav-link" href="#contact">Contact
+                      <span class="sr-only"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <img src="./assets/images/burgerGuy.png" alt="" class='col-5 burgerGuy'> {{!--main row col1 --}}
+    <img src="./assets/images/burger.png" alt="" class='col-5 burger'>{{!--main row col3 --}}
+    <div class='row'>
+      <div class='col-12'>
+        <h1>Burgers!</h1>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-12' id='makeBurger'>
+        <h2 class='burgerForm'>Make a Burger</h2>
+        <form class="create-form">
+          <div class="form-group">
+            <label for="ca">Burger Name:</label>
+            <input type="text" id="ca" name="name">
+          </div>
+          <div class="form-group">
+            <label for="devoured"></label>
+            <input type="radio" name="devoured" value="1"> Devoured?
+            <input type="radio" name="devoured" value="0"> Ready?
+          <button type="submit">Make it</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Burgers Eatin!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+    <div class='row'>
+      <div class='col-6 burgerLi'>
+        <h2>Burgers up!</h2>
+        <ul>
+          {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devoured=true}} {{/unless}} {{/each}}
+        </ul>
+      </div>
+      <div class='col-6 burgerLi'>
+        <h2>Burgers Eatin!</h2>
+        <ul>
+          {{#each burgers}} {{#if devoured}} {{> burgers/burger-block devoured=false}} {{/if}} {{/each}}
+        </ul>
+      </div>
+    </div>
   </div>
-
-  <div class="form-group">
-    <label for="devoured">Eatin?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Eatin!<br>
-    <input type="radio" name="devoured" value="0"> Ready to eat!
-  </div>
-
-  <button type="submit">Add Burger</button>
-</form>
-
 </div>
-<img src="./assets/images/burger.png" alt="">
