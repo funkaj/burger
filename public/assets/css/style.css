@@ -1,6 +1,6 @@
 
 body {
-  background-color: rgb(15, 15, 15);
+  background-color: rgb(31, 30, 30);
   min-height: 100vh;
 }
 .container{
@@ -41,6 +41,8 @@ li {
     background-size: cover;
   max-width: 20rem;
   position: relative;
+  color: rgb(29, 29, 29);
+  margin: 10px;
 }
 li:after {
   border-radius: 10px;
@@ -102,7 +104,7 @@ li:after {
   color: rgb(240, 240, 240);
 }
 .navbar-light .navbar-nav .active>.nav-link {
-  color: rgb(240, 240, 240);
+  color: rgb(27, 27, 27);
   text-align: center;
 } 
 
