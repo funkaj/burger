@@ -15,6 +15,7 @@ body {
   font-family: 'Bungee Shade', cursive;
   color: rgb(228,156,62);
   font-size: 8rem;
+  text-align: center;
  }
  h2 {
   font-family: 'Bungee Shade', cursive;
@@ -26,15 +27,31 @@ body {
    color: rgb(228,156,62);
  }
 li {
-  border-radius: 10px;
-  -moz-box-shadow:    inset 0 0 10px #000000;
-   -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000;
-  border: double 5px;
+  border-radius: 7px;
+  -moz-box-shadow:    inset 0 0 30px #ff0000;
+   -webkit-box-shadow: inset 0 0 30px #ff0000;
+   box-shadow:         inset 0 0 30px #ff0000;
+  border: solid rgb(255, 166, 0) 4px;
   padding: 5px;
   margin: 5px;
-  background: #e49c3e;
+  background: url('../images/paper-bg.png')no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   max-width: 20rem;
+  position: relative;
+}
+li:after {
+  border-radius: 10px;
+  border: solid rgb(0, 255, 13) 10px;
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  z-index: -1;
 }
 
 .label {
@@ -86,5 +103,16 @@ li {
 }
 .navbar-light .navbar-nav .active>.nav-link {
   color: rgb(240, 240, 240);
+  text-align: center;
 } 
 
+.burgerGuy {
+  max-width: max-content;
+}
+.burger {
+  max-width: max-content;
+  max-height: max-content;
+}
+button {
+  margin: inherit;
+}
