@@ -2,7 +2,7 @@
 A logger with MySQL, Node, Express, Handlebars and a homemade ORM. 
 
 # How to use
-![Example 1](app/images/readMeImg.png?raw=true "Example 1")
+![Example 1](public/assets/images/readMeImg.png?raw=true "Example 1")
 
 
 ## Built with/using
