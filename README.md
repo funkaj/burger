@@ -1,9 +1,7 @@
 # [Burger](https://powerful-cove-55076.herokuapp.com/)
-Burger eating 
+A logger with MySQL, Node, Express, Handlebars and a homemade ORM. 
 
 # How to use
-
-
 ![Example 1](app/images/readMeImg.png?raw=true "Example 1")
 
 
