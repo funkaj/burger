@@ -2,6 +2,7 @@
 A logger with MySQL, Node, Express, Handlebars and a homemade ORM. 
 
 # How to use
+Enter a burger name in the form field. chose if it should be ready or already devoured. Then you can toggle the burger to and from devoured or delete. The database will persist for the next user.
 ![Example 1](public/assets/images/readMeImg.png?raw=true "Example 1")
 
 
